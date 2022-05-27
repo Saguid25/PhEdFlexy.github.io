@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    font-family: sans-serif;
+    background-image: url("nagpayong1.jpg");
+    background-repeat: no-repeat;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #101c32;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    z-index: 2;
+}
+nav a img{
+    width: 150px;
+    cursor: pointer;
+}
+nav .pic img{
+    width: 150px;
+    cursor: pointer;
+}
+nav .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul  li {
+    list-style: none;
+    margin-left: 30px;
+    position: relative;
+}
+nav .navigation ul  li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 100;
+    transition: 0.3s ease;
+}
+nav .navigation ul  li a.active,
+nav .navigation ul  li a:hover{
+    color: #fdc93b;
+}
+
+.main{
+    padding-top: 250px;
+     width: 700px;
+     position: absolute;
+     top: 50%;
+     left: 30%;
+     transform: translate(-50%, -50%);
+     vertical-align: middle;
+}
+.main h1{
+    font-size: 60px;
+    margin: 0px;
+    padding: 0;
+    text-align: center;
+    color: #fdc93b;
+}
+.main div{
+    position: relative;
+    margin: 40px 0;
+}
+label{
+    position: absolute;
+    top: 0;
+    margin: 10px;
+    padding: 0 10px;
+    background-color: transparent;
+    transition: top .2s ease-in-out;
+}
+.active{
+    top: -25px;
+    font-size: 16px;
+    font-weight: 900;
+}
+.con input[type=text]{
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #fdc93b;
+    font-size: 17px;
+    font-weight: 800;
+    background-color: #101c32;
+    color: white;
+}
+.con input[type=text]:focus{
+    outline: none;
+}
+.main .btn {
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-left: 250px;
+}
+.main .btn a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 13px 20px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.main .btn  a.blue{
+    margin-right: 45px;
+    margin-left: 12px;
+    color: #fff;
+    background: #101c32;
+    transition: 0.3s ease;
+}  
+.main .btn  a.blue:hover{
+    color: #101c32;
+    background: #fdc93b;
+} 

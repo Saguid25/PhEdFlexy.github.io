@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900%display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+span {
+    font-size: .9rem;
+    color: #757575;
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49)
+}
+
+/* Navigation */
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #101c32;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+}
+
+nav img{
+    width: 150px;
+    cursor: pointer;
+}
+
+nav .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul  li {
+    list-style: none;
+    margin-left: 30px;
+    position: relative;
+}
+
+nav .navigation ul  li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 100;
+    transition: 0.3s ease;
+}
+nav .navigation ul  li a.active,
+nav .navigation ul  li a:hover{
+    color: #fdc93b;
+}
+/* home */
+#home {
+ background-image: url("nagpayong2.jpg");
+ width: 100%;
+ height: 100vh;
+ background-size: cover;
+ background-position: center;
+}
+#home h2{
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+#home p{
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+#home .btn{
+    margin-top: 30px;
+}
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#home a.blue{
+    color: #fff;
+    background: #fdc93b;
+    transition: 0.3s ease;
+}
+
+#home a.blue:hover{
+    color: rgb(21, 21, 100);
+    background: #fff;
+}
+
+#home a.yellow{
+    color: #fff;
+    background: #fdc93b;
+    transition: 0.3s ease;
+
+}
+
+#home a.yellow:hover{
+    color: rgb(21, 21, 100);
+    background: #fff;
+}
+/* about */
+#Abhome{
+    background-image: url("nagpayong3.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+/* mv */
+#mv .mission{
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),url("nagpayong1.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+   }
+#mv .mission h2{
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+} 
+#mv .mission p{
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+#mv .vision{
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),url("nagpayong1.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+   }
+   #mv .vision h2{
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+} 
+#mv .vision p{
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+/* modules */
+.dropdown{
+    display: none;
+}
+.navigation ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+.dropdown ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown ul li{
+    width: 150px;
+    padding: 10px;
+}
+#modules {
+    padding: 10vw 10vw 0 8vw;
+    text-align: center;
+}
+
+#modules .module-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 3rem;
+    margin-top: 80px;
+}
+
+
+#modules .module {
+    text-align: start;
+    background: #f9f9ff;
+    height: 100%;
+}
+
+#modules .module img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;  
+}
+#modules .module .details h2:hover{
+    color: #fdc93b;
+}
+#modules .module .details h2{
+    text-decoration: none;
+    color: #101c32;
+    font-size: 25px;
+    margin-left: 20px;
+}  
+#module {
+    background-image: url("nagpayong2.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px;
+   }
+/* Login */
+#login {
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(99, 122, 168, 0.5), rgba(81, 91, 233, 0.5)),url("nagpayong1.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login .form{
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 85px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+#login .form input{
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid rgb(84, 40, 241);
+    outline: none;
+}
+
+footer{
+    padding: 8vw;
+    background-color: #101c32;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+footer{
+    padding-bottom: 40px;
+}
+footer h3{
+    color: rgb(241, 240, 245);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+footer li{
+    list-style: none;
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+footer li:hover{
+    color: rgb(241, 240, 245);
+
+}
+
+footer p{
+    color: #7b838a;
+
+}
+
+footer .email  {
+     margin-top: 20px;
+}
+
+footer input{
+    width: 220px;
+    padding: 15px 12px;
+    background: #334f6c;
+    border: none;
+    outline: none;
+    color: #fff;
+
+}
+
+footer .Email a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 15px 20px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+footer .Email a.yellow{
+    color: #fff;
+    background: #fdc93b;
+    transition: 0.3s ease;
+}
+footer .Email a.yellow:hover{
+    color: rgb(21, 21, 100);
+    background-color: #fff;
+}
+/* Log in */
+
+#home1 {
+ background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),url("nagpayong1.jpg");
+ width: 100%;
+ height: 100vh;
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding-top: 40px;
+}
+.centerlog{
+    width: 430px;
+    margin: auto;
+    position: relative;
+}
+.centerlog .header{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    padding: 25px 0 30px 25px;
+    background: #fdc93b;
+    border-bottom: 1px solid rgb(21, 21, 100);
+    border-radius: 5px 5px 0 0;
+
+}
+.centerlog form{
+    position: static;
+    background: white;
+    width: 100%;
+    padding: 50px 10px 0 30px;
+    box-sizing: border-box;
+    border: 1px solid rgb(21, 21, 100);
+    border-radius: 0 0 5px 5px;
+}
+form input{
+    height: 50px;
+    width: 90%;
+    padding: 0 10px;
+    border-radius: 3px;
+    border: 1px solid silver;
+    font-size: 18px;
+    outline: none;
+}
+
+form input[type="password"]{
+    margin-top: 20px;
+}
+
+form i{
+    position: absolute;
+    font-size: 25px;
+    color: rgb(21, 21, 100);
+    margin: 15px 0 0 -45px;
+}
+.centerlog .btn{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.centerlog form a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 13px 20px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.centerlog form a.blue{
+    margin-right: 45px;
+    margin-left: 12px;
+    color: #fff;
+    background: rgb(21, 21, 100);
+    transition: 0.3s ease;
+}  
+.centerlog form a.blue:hover{
+    color: rgb(21, 21, 100);
+    background: #fff;
+} 
+.centerlog form a.yellow{
+    color: #fff;
+    background: #fdc93b;
+    transition: 0.3s ease;
+}  
+.centerlog form a.yellow:hover{
+    color: rgb(21, 21, 100);
+    background: #fff;
+} 
+i.fa-lock{
+    margin-top: 35px;
+}
+
+form input[type="submit"]{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 130px;
+    height: 45px;
+    color: white;
+    cursor: pointer;
+    line-height: 45px;
+    border-radius: 45px;
+    border-radius: 5px;
+    background: #fdc93b;
+}
+form input[type="submit"]:hover{
+    background: rgb(21, 21, 100);
+}
+form a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(21, 21, 100);
+    padding: 0 0 0 20px;
+}

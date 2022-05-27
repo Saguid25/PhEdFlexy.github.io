@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900%display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+span {
+    font-size: .9rem;
+    color: #757575;
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49)
+}
+
+/* Navigation */
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #101c32;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    z-index: 2;
+}
+nav a img{
+    width: 150px;
+    cursor: pointer;
+}
+nav .pic img{
+    width: 150px;
+    cursor: pointer;
+}
+nav .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul  li {
+    list-style: none;
+    margin-left: 30px;
+    position: relative;
+}
+nav .navigation ul  li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 100;
+    transition: 0.3s ease;
+}
+nav .navigation ul  li a.active,
+nav .navigation ul  li a:hover{
+    color: #fdc93b;
+}
+#modules {
+    padding: 10vw 10vw 8vw 8vw;
+    letter-spacing: 2px;
+}
+#modules .pe {
+    margin-bottom: 32px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+#modules .mod{
+    margin-bottom: 32px;
+    margin-top: 25px;
+    text-align: center;
+}
+#modules .module-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 3rem;
+    margin-top: 25px;
+    margin-bottom: -30px;
+}
+#modules .module {
+    text-align: start;
+    background: #f9f9ff;
+    height: 75%;
+}
+
+#modules .module img{
+    width: 90%;
+    height: 40%;
+    background-size: cover;
+    background-position: center;  
+    margin-left: 25px;
+    margin-top: 15px;
+}
+#modules .module .details h2:hover{
+    color: #fdc93b;
+}
+#modules .module .details h2{
+    text-decoration: none;
+    color: #101c32;
+    font-size: 25px;
+    margin-left: 20px;
+}  
+#modules .module .details h3{
+    margin-top: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 20px;
+}  #modules .module .details p{
+    margin-top: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    margin-left: 20px;
+}  
+#module {
+    background-image: url("nagpayong2.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px;
+}
+.prev .but{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.prev form a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 13px 20px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.prev form a.blue{
+    margin-right: 45px;
+    margin-left: 12px;
+    color: #fff;
+    background: rgb(21, 21, 100);
+    transition: 0.3s ease;
+}  
+.prev form .but a:hover{
+    color: rgb(21, 21, 100);
+    background: #fdc93b;
+} 
+footer{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 120px;
+    padding-right: 120px;
+    background-color: #101c32;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+footer h2{
+    color: rgb(241, 240, 245);
+    font-weight: 600;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    margin-left: 175px;
+}
+footer li{
+    margin-left: 175px;
+    list-style: none;
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+footer li:hover{
+    color: rgb(241, 240, 245);
+}
+footer h3{
+    color: rgb(241, 240, 245);
+    font-weight: 600;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+footer p{
+    color: #7b838a;
+}
+footer .email  {
+     margin-top: 20px;
+}
+footer input{
+    width: 220px;
+    padding: 15px 12px;
+    background: #334f6c;
+    border: none;
+    outline: none;
+    color: #fff;
+    z-index: 3;
+}
+footer .Email a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 15px 20px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+footer .Email a.yellow{
+    color: #fff;
+    background: #fdc93b;
+    transition: 0.3s ease;
+}
+footer .Email a.yellow:hover{
+    color: rgb(21, 21, 100);
+    background-color: #fff;
+}

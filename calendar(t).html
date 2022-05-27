@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="evo-calendar.min.css">
+    <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+        <!-- Navigation -->
+        <nav>
+          <a href="home(t).html">
+            <img src="Icon.png" alt="">
+        </a>  
+            <div class="navigation">
+                <ul> 
+                    <li><a href="home(t).html">Home </a> </li>
+                    <li><a href="about(t).html">About </a> </li>
+                </ul>
+            </div>
+        </nav>
+       <div class="title">
+        <h1>Nagpayong National Highschool Calendar</h1>
+       </div> 
+    <section id="name">
+        <div class="name1">
+            <div class="hero">
+                <div id="calendar"></div>
+            </div>
+        </div>
+    </section>
+    <footer>    
+      <div class="footer-col"> 
+          <h2>Need Help?</h2>  
+          <li>Contact Us</li> 
+          <li>Email Us</li>
+          <li>Updates</li>
+          <h2>PhEdFlexy, All rights Reserved 2022</h2>
+      </div>
+      <div>
+              <h3>Connect to the Developers, You can send your Email for more</h3>
+              <div class="Email">
+                  <input type="text" placeholder="Enter Your Email Address">
+                  <a href="#" class="yellow">Visit Us</a>
+              </div>
+      </div>          
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="evo-calendar.min.js"></script>
+    <script>
+            $(document).ready(function() {
+            $("#calendar").evoCalendar({ 
+                theme: "Midnight Blue",
+                calendarEvents: [
+      {
+        id: 'event1', // Event's ID (required)
+        name: "New Year", // Event name (required)
+        date: "January/1/2020", // Event date (required)
+        description:"National Holiday",
+        type: "holiday", // Event type (required)  
+        color: "#63d867",
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event2', // Event's ID (required)
+        name: "Chinese New Year", // Event name (required)
+        date: "February/1/2020", // Event date (required)
+        description:"National Holiday ",
+        type: "holiday", // Event type (required)  
+        color: "#63d867",
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event3', // Event's ID (required)
+        name: "People Power Revolution", // Event name (required)
+        date: "February/25/2020", // Event date (required)
+        description:"National Holiday",
+        type: "holiday", // Event type (required)  
+        color: "#63d867",
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event4', // Event's ID (required)
+        name: "Araw ng Kagitingan", // Event name (required)
+        date: "April/9/2020", // Event date (required)
+        description:"National Holiday",
+        type: "holiday", // Event type (required)  
+        color: "#63d867",
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event5', // Event's ID (required)
+        name: "Maundy Thursday", // Event name (required)
+        date: "April/14/2022", // Event date (required)
+        description:"National Holiday",
+        type: "holiday", // Event type (required)  
+        color: "#63d867"
+      },
+      {
+        id: 'event6', // Event's ID (required)
+        name: "Good Friday", // Event name (required)
+        date: "April/15/2022", // Event date (required)
+        description:"National Holiday",
+        type: "holiday", // Event type (required)  
+        color: "#63d867"
+      },
+      {
+        id: 'event7', // Event's ID (required)
+        name: "Black Saturday", // Event name (required)
+        date: "April/16/2022", // Event date (required)
+        description:"National Holiday",
+        type: "holiday", // Event type (required)  
+        color: "#63d867"
+      },
+      {
+        id: 'event9', // Event's ID (required)
+        name: "Labour Day", // Event name (required)
+        date: "May/1/2020", // Event date (required)
+        description:"National Holiday",
+        type: "holiday", // Event type (required)  
+        color: "#63d867",
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event10', // Event's ID (required)
+        name: "Eid'l Fitr", // Event name (required)
+        date: "May/3/2020", // Event date (required)
+        description:"National Holiday",
+        type: "holiday", // Event type (required)  
+        color: "#63d867",
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event11', // Event's ID (required)
+        name: "Independence Day", // Event name (required)
+        date: "June/12/2020", // Event date (required)
+        description:"National Holiday",
+        type: "holiday", // Event type (required)  
+        color: "#63d867",
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event12', // Event's ID (required)
+        name: "National Heroes Day", // Event name (required)
+        date: "August/29/2020", // Event date (required)
+        description:"National Holiday",
+        type: "holiday", // Event type (required)  
+        color: "#63d867",
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event13', // Event's ID (required)
+        name: "All Saints' Day", // Event name (required)
+        date: "November/1/2020", // Event date (required)
+        description:"National Holiday",
+        type: "holiday", // Event type (required)  
+        color: "#63d867",
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event14', // Event's ID (required)
+        name: "All Souls' Day", // Event name (required)
+        date: "November/2/2020", // Event date (required)
+        description:"Not A Public Holiday",
+        type: "holiday", // Event type (required)  
+        color: "#63d867",
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event15', // Event's ID (required)
+        name: "Bonifacio Day", // Event name (required)
+        date: "November/30/2020", // Event date (required)
+        description:"National Holiday",
+        type: "holiday", // Event type (required)  
+        color: "#63d867",
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event16', // Event's ID (required)
+        name: "Immaculate Conception Day", // Event name (required)
+        date: "December/8/2020", // Event date (required)
+        description:"National Holiday ",
+        type: "holiday", // Event type (required)  
+        color: "#63d867",
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event17', // Event's ID (required)
+        name: "Christmas Eve", // Event name (required)
+        date: "December/24/2020", // Event date (required)
+        description:"Not A Public Holiday",
+        type: "holiday", // Event type (required)  
+        color: "#63d867",
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event18', // Event's ID (required)
+        name: "Christmas Day", // Event name (required)
+        date: "December/25/2020", // Event date (required)
+        description:"National Holiday ",
+        type: "holiday", // Event type (required)  
+        color: "#63d867",
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event19', // Event's ID (required)
+        name: "Rizal Day", // Event name (required)
+        date: "December/30/2020", // Event date (required)
+        description:"National Holiday ",
+        type: "holiday", // Event type (required)  
+        color: "#63d867",
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event20', // Event's ID (required)
+        name: "New Year's Eve", // Event name (required)
+        date: "December/31/2020", // Event date (required)
+        description:"National Holiday ",
+        type: "holiday", // Event type (required)  
+        color: "#63d867",
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        name: "Vacation Leave",
+        badge: "02/13 - 02/15", // Event badge (optional)
+        date: ["February/13/2020", "February/15/2020"], // Date range
+        description: "Vacation leave for 3 days.", // Event description (optional)
+        type: "event",
+        color: "#63d867" // Event custom color (optional)
+      }
+    ]
+                 })
+            })
+    </script>
+</body>
+</html>

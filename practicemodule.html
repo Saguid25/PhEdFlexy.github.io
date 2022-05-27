@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Module</title>
+    <link rel="stylesheet" href="practicemodule.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/589e110c69.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="menubar">
+        <a href="home.html">
+            <img src="Icon.png" alt="">
+        </a>  
+
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a class="active" href="#">Modules <i class="fa fa-caret-down"></i> </a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="#">Module1</a></li>
+                        <li><a href="#">Module2</a></li>
+                        <li><a href="#">Module3</a></li>
+                        <li><a href="#">Module4</a></li>
+                        <li><a href="#">Module5</a></li>
+                        <li><a href="#">Module6</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- module -->
+    <section id="module"> 
+        <img src="module2.jpg">
+    </section>
+    <section id="module1">
+        <div class="des"> 
+            <div class="im">
+                <img src="Mod1.jpg" alt="#" height="250" width="1100">
+            </div>
+            <h1>Module 1: Introduction to Physical Education</h1>
+            <p>This module tackle about Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi recusandae dolorem ex laborum quidem. Tempore vero nulla, autem eligendi expedita rerum accusantium est neque soluta maiores facere nisi dolore perspiciatis!    </p>
+        </div>
+                <div class="accordion">
+                    <div class="content1">
+                        <div class="mt">
+                            <h3><i class="fa-solid fa-align-justify"></i> Module Information</h3>    
+                        </div>
+                            <div class="content2">
+                                <div class="mot">
+                                    <h2><i class="fas fa-edit"></i> Module Topic</h2>
+                                </div>
+                                <div class="moc">
+                                    <h2><i class="fa duotone fa-book-open"></i> Module Content</h2>
+                                </div>
+                                <div class="moo">
+                                    <h2><i class="fas fa-crosshairs"></i> Module Objectives</h2>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="content1">
+                        <div class="mt">
+                            <h3><i class="fa-solid fa-align-justify"></i> Materials</h3>    
+                        </div>
+                            <div class="content2">
+                                <div class="mot">
+                                    <h2><i class="fa-solid fa-file-powerpoint"></i> Powerpoint Presentation</h2>
+                                </div>
+                                <div class="moc">
+                                    <h2><i class="fa-regular fa-file-video"></i> Video Presentation</h2>
+                                </div>
+                                <div class="moo">
+                                    <h2><i class="fas fa-clone"></i> Other Materials</h2>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="content1">
+                        <div class="mt">
+                            <h3><i class="fa-solid fa-align-justify"></i> Activities</h3>    
+                        </div>
+                            <div class="content2">
+                                <div class="moo">
+                                    <h2><i class="fas fa-chalkboard-teacher"></i>  Discussion Forum</h2>
+                                    
+                                </div>
+                                <div class="moo">
+                                    <h2><i class="fas fa-shapes"></i> Activity For Today</h2>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="content1">
+                        <div class="mt">
+                            <h3><i class="fa-solid fa-align-justify"></i> Assessment</h3>    
+                        </div>
+                            <div class="content2">
+                                <div class="moo">
+                                    <h2><i class="far fa-folder"></i> Assignment</h2>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="content1">
+                        <div class="mt"> 
+                            <h3><i class="fa-solid fa-align-justify"></i> Feedback</h3>    
+                        </div>
+                            <div class="content2">
+                                <div class="moo">
+                                    <h2><i class="fa fa-commenting"></i> What are your thoghts in this Module</h2>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+    </section>
+    <script>
+        const accordion = document.getElementsByClassName('content1');
+
+        for (i = 0; i<accordion.length; i++){accordion[i].addEventListener('click', function(){this.classList.toggle('active')})
+        }
+    </script>
+
+    <a class="gotopbtn" href="#" > <i class="material-icons" style="font-size:36px">arrow_upward</i> </a>
+    <footer>    
+        <div class="footer-col"> 
+            <h2>Need Help?</h2>  
+            <li>Contact Us</li> 
+            <li>Email Us</li>
+            <li>Updates</li>
+            <h2>PhEdFlexy, All rights Reserved 2022</h2>
+        </div>
+        <div>
+                <h3>Connect to the Developers, You can send your Email for more</h3>
+                <div class="Email">
+                    <input type="text" placeholder="Enter Your Email Address">
+                    <a href="#" class="yellow">Visit Us</a>
+                </div>
+        </div>          
+    </footer>
+</body>
+</html>

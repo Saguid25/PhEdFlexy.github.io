@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+.menubar{
+    position: fixed;
+    background-color: #101c32;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.15);
+    z-index: 2;
+}
+.menubar img{
+    width: 150px;
+    margin-left: 52px;
+    cursor: pointer;
+}
+.menubar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menubar ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.menubar ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 100;
+    transition: ease 0.3s;
+}
+.menubar ul li a.active,
+.menubar ul li a:hover{
+    color: #fdc93b;
+}
+.dropdown{
+    display: none;
+}
+.menubar ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    margin-left: 10px;
+    left: 0;
+    top: 100%;
+    background-color: #101c32
+}
+.dropdown ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown ul li {
+    width: 150px;
+    padding: 10px;
+}
+/* home */
+#home {
+ background-image: url("nagpayong2.jpg");
+ width: 100%;
+ height: 100vh;
+ background-size: cover;
+ background-position: center;
+}
+#home h2{
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+#home p{
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+#home .btn{
+    margin-top: 30px;
+}
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#home a.blue{
+    color: #fff;
+    background: #fdc93b;
+    transition: 0.3s ease;
+}
+
+#home a.blue:hover{
+    color: rgb(21, 21, 100);
+    background: #fff;
+}
+
+#home a.yellow{
+    color: #fff;
+    background: #fdc93b;
+    transition: 0.3s ease;
+
+}
+
+#home a.yellow:hover{
+    color: rgb(21, 21, 100);
+    background: #fff;
+}
+.dropdown{
+    display: none;
+}
+.navigation ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+.dropdown ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown ul li{
+    width: 150px;
+    padding: 10px;
+}
+.im{
+    margin-top: 50px;
+    text-align: center;
+}
+#modules {
+    padding: 2vw 10vw 8vw 8vw;
+    letter-spacing: 2px;
+}
+#modules .pe {
+    margin-bottom: 32px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+#modules .mod{
+    margin-bottom: 32px;
+    margin-top: 25px;
+    text-align: center;
+}
+#modules .module-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 3rem;
+    margin-top: 50px;
+    margin-bottom: -30px;
+}
+#modules .module {
+    text-align: start;
+    background: #f9f9ff;
+    height: 75%;
+}
+
+#modules .module img{
+    width: 90%;
+    height: 40%;
+    background-size: cover;
+    background-position: center;  
+    margin-left: 25px;
+    margin-top: 15px;
+}
+#modules .module .details h2:hover{
+    color: #fdc93b;
+}
+#modules .module .details h2{
+    text-decoration: none;
+    color: #101c32;
+    font-size: 25px;
+    margin-left: 20px;
+}  
+#modules .module .details h3{
+    margin-top: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 20px;
+}  #modules .module .details p{
+    margin-top: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    margin-left: 20px;
+}  
+#module {
+    background-image: url("nagpayong2.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px;
+   }
+
+.gotopbtn{
+position: fixed;
+width: 50px;
+height: 37px;
+background: #101c32;
+bottom: 40px;
+right: 50px; 
+text-decoration: none;
+text-align: center;
+line-height: 50px;
+color: white;
+font-size: 22px;    
+}   
+footer{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 120px;
+    padding-right: 120px;
+    background-color: #101c32;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+footer h2{
+    color: rgb(241, 240, 245);
+    font-weight: 600;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    margin-left: 175px;
+}
+footer li{
+    margin-left: 175px;
+    list-style: none;
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+footer li:hover{
+    color: rgb(241, 240, 245);
+}
+footer h3{
+    color: rgb(241, 240, 245);
+    font-weight: 600;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+footer p{
+    color: #7b838a;
+}
+footer .email  {
+     margin-top: 20px;
+}
+footer input{
+    width: 220px;
+    padding: 15px 12px;
+    background: #334f6c;
+    border: none;
+    outline: none;
+    color: #fff;
+    z-index: 3;
+}
+footer .Email a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 15px 20px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+footer .Email a.yellow{
+    color: #fff;
+    background: #fdc93b;
+    transition: 0.3s ease;
+}
+footer .Email a.yellow:hover{
+    color: rgb(21, 21, 100);
+    background-color: #fff;
+}

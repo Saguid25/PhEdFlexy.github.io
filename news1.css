@@ -1,0 +1,88 @@
+#home {
+    background-image: url("nagpayong2.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+   }
+   #home h2{
+       color: #fff;
+       font-size: 2.2rem;
+       letter-spacing: 1px;
+   }
+   #home p{
+       width: 50%;
+       color: #fff;
+       font-size: 0.9rem;
+       line-height: 25px;
+   }
+   #home .btn{
+       margin-top: 30px;
+   }
+   #home a{
+       text-decoration: none;
+       font-size: 0.9rem;
+       padding: 13px 35px;
+       background-color: #fff;
+       font-weight: 600;
+       border-radius: 5px;
+   }
+   
+   #home a.blue{
+       color: #fff;
+       background: #fdc93b;
+       transition: 0.3s ease;
+   }
+   
+   #home a.blue:hover{
+       color: rgb(21, 21, 100);
+       background: #fff;
+   }
+   
+   #home a.yellow{
+       color: #fff;
+       background: #fdc93b;
+       transition: 0.3s ease;
+   
+   }
+   
+   #home a.yellow:hover{
+       color: rgb(21, 21, 100);
+       background: #fff;
+   }
+#home .bod{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 80%;
+    height: 20px solid #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+}
+#home .bod .news{
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 15px 20px;
+}
+#home .bod .news .title{
+    color: black;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#home .bod .news .paragraph{
+    border-left: 5px solid #2370a5;
+    padding-left: 5px;
+}
+#home .bod .news h1{
+    font-size: 2.0rem;
+    color: black;
+}
+#home .bod .news h3{
+    font-size: 1.5rem;
+}
+#home .bod .news p{
+    letter-spacing: 0.1rem;
+    color: black;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice lang</title>
+    <link rel="stylesheet" href="loginpractice.css">  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+    <section id="home1">
+        <!-- Navigation -->
+            <nav>   
+                <a href="home.html">
+                    <img src="Icon.png" alt="">
+                </a>  
+                <div class="navigation">
+                    <ul> 
+                        <li><a class="active" href="#">Home </a> </li>
+                        <li><a href="about.html">About </a> </li>
+                        <li><a href="login.html">LogIn </a> </li>
+                        <li><a href="register.html">Register </a> </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="center">
+                    <div class="header">LogIn Your Account </div>
+                     <form>
+                         <input type="text" placeholder="Email Or Username">
+                         <i class="far fa-envelope"></i>
+                         <input id="pswrd" type="password" placeholder="Password">
+                         <i class="fas fa-lock" onclick="show()"></i>
+                         <input type="submit" value="Sign In">
+                         <a href="#">Forgot Password?</a>
+                     </form>
+            </div>
+
+            <script>
+                function show(){
+                    var pswrd = document.getElementById('pswrd');
+                    var icon = document.querySelector('.fas');
+                    if (pswrd.type === "password"){
+                        pswrd.type = "text";
+                        pswrd.style.marginTop = "20px";
+                        icon.style.color = "#fdc93b";
+                    }else{
+                        pswrd.type = "password";
+                        icon.style.color = "grey";
+                    }
+                }
+            </script>
+
+    </section>
+</body>
+</html>

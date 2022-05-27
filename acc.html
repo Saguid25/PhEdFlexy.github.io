@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="acc.css">
+</head>
+<body>
+    <div class="accordion">
+        <div class="content1">
+            <div class="label">List One</div>
+                <div class="content2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magni veniam tempora sed perspiciatis animi aliquam! Ipsa deserunt pariatur iste tenetur, rerum incidunt quidem? Reiciendis atque illo iste fugit dolores </p>
+                </div>
+            </div>
+        <div class="content1">
+            <div class="label">List Two</div>
+                <div class="content2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magni veniam tempora sed perspiciatis animi aliquam! Ipsa deserunt pariatur iste tenetur, rerum incidunt quidem? Reiciendis atque illo iste fugit dolores.</p>
+                </div>
+         </div>
+         <div class="content1">
+            <div class="label">List Three</div>
+                <div class="content2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magni veniam tempora sed perspiciatis animi aliquam! Ipsa deserunt pariatur iste tenetur, rerum incidunt quidem? Reiciendis atque illo iste fugit dolores.</p>
+                </div>
+         </div>   
+         <div class="content1">
+            <div class="label">List Four</div>
+                <div class="content2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magni veniam tempora sed perspiciatis animi aliquam! Ipsa deserunt pariatur iste tenetur, rerum incidunt quidem? Reiciendis atque illo iste fugit dolores.</p>
+                </div>
+         </div>           
+     </div> 
+    <script>
+        const accordion = document.getElementsByClassName('content1');
+
+        for (i = 0; i<accordion.length; i++){accordion[i].addEventListener('click', function(){this.classList.toggle('active')})
+        }
+    </script>
+</body>
+</html>

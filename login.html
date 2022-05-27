@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="pic">
+            <img src="Icon.png" alt="">
+        </div>
+    </nav>
+        <!-- form -->
+        <section id="home1">
+            <div class="centerlog">   
+                <div class="header">Login your account</div>    
+                <form>
+                    <input id="username" type="text" placeholder="Email or Username" required>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <input id= "pswrd" type="password" placeholder="Password" required>
+                    <i class="fas fa-lock" onclick="show()"></i>
+                    <div class="btn">
+                        <a class="blue" href="home.html" >Submit</a>
+                        <a class="yellow" href="#">Forgot Password?</a>
+                    </div>
+                </form>
+            </div>
+            <script>
+                function show(){
+                    var pswrd = document.getElementById('pswrd');
+                    var icon = document.querySelector('.fas');
+                    if (pswrd.type === "password"){
+                        pswrd.type = "text";
+                        pswrd.style.marginTop = "20px";
+                        icon.style.color = "#fdc93b";
+                    }else{
+                        pswrd.type = "password";
+                        icon.style.color = "rgb(21, 21, 100)";
+                    }
+                }
+                </script>
+        </section>
+</body>
+</html>
